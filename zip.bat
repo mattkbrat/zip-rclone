@@ -1,4 +1,4 @@
-REM | zip.bat source_dir work_dir
+REM zip.bat source_dir
 
 REM Get The Date Tokens and Time in ISO Format:
 
@@ -27,9 +27,9 @@ REM Run 7Zip Command:
 REM Delete original folder
 DEL /S /Q %1
 
-REM RClone backup to sftp drive
-REM cd C:\Program Files\rclone
-REM rclone copyto %_Dst%.zip sftp:%thedatetime%.zip
+REM RClone backup to sftp drive:
+cd C:\Program Files\rclone
+rclone copyto %_Dst%.zip sftp:%thedatetime%.zip
 
 
 (
