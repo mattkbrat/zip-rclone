@@ -4,6 +4,7 @@ Zip folders in a location, then send to rclone backup
 # use
 
 Expects to be invoked from the command line : zip.bat source_dir
+
 source_dir = files to be zipped
 
 # rclone
